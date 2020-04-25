@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+
+<!-- веб.компонента  -->
+<br><hr>
+<script>
+customElements.define('show-hello', class extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `<p>
+      Hello, ${this.getAttribute('name')}, тут НЕТ теневого DOM
+    </p>`;
+  }
+});
+</script>
+<show-hello name="John"></show-hello>
+
+<!-- веб.компонента и теневой ДОМ -->
+<br><hr>
+<script>
+customElements.define('show-hello-shadow', class extends HTMLElement {
+  connectedCallback() {
+    const shadow = this.attachShadow({mode: 'open'});
+    shadow.innerHTML = `<p>
+      Hello, ${this.getAttribute('name')}, тут теневой DOM
+    </p>`;
+  }
+});
+</script>
+<show-hello-shadow name="John"></show-hello-shadow>
+
+<!-- веб.компонента шаблон -->
+<br><hr>
+<template id="tmpl">
+  <script>
+    console.log("Привет, я из шаблона");
+  </script>
+  <div class="message">Привет, я из шаблона, у меня нет теневого ДОМ</div>
+</template>
+
+<script>
+  let elem = document.createElement('div');
+
+  // Клонируем содержимое шаблона для того, чтобы переиспользовать его несколько раз
+  elem.append(tmpl.content.cloneNode(true));
+
+  document.body.append(elem);
+  // Сейчас скрипт из <template> выполнится
+</script>
+
+<!-- веб.компонента + шаблон + теневой ДОМ-->
+<br><hr>
+<template id="tmpl2">
+  <style> p { font-weight: bold; } </style>
+  <p id="message"></p>
+</template>
+
+<div id="elem12">Нажми на меня</div>
+
+<script>
+  elem12.onclick = function() {
+    elem12.attachShadow({mode: 'open'});
+
+    elem12.shadowRoot.append(tmpl2.content.cloneNode(true)); // (*)
+
+    elem12.shadowRoot.getElementById('message').innerHTML = "Привет из теней!";
+  };
+</script>
+
+<!-- веб.компонента slot -->
+<br><hr>
+<script>
+customElements.define('user-card', class extends HTMLElement {
+  connectedCallback() {
+    this.attachShadow({mode: 'open'});
+    this.shadowRoot.innerHTML = `
+      <div>Имя:
+        <slot name="username"></slot>
+      </div>
+      <div>Дата рождения:
+        <slot name="birthday"></slot>
+      </div>
+    `;
+  }
+});
+</script>
+
+<user-card>
+  <span slot="username">Иван Иванов</span>
+  <span slot="birthday">01.01.2001</span>
+</user-card>
+
