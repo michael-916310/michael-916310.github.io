@@ -1,0 +1,13 @@
+.intro-1line__menu{
+    width:400px;
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:flex-end;
+
+    font-size:15px;
+
+    margin:0 0 10px 0;    
+}
+

@@ -1,0 +1,14 @@
+.intro-center__to-right{
+	display:flex;
+	justify-content: center;
+	align-items: center;		
+}
+
+.intro-center__to-right div{
+	width:40px;
+	margin-right:20px;	
+}
+
+.intro-center__to-right img{
+	width:100%;
+}

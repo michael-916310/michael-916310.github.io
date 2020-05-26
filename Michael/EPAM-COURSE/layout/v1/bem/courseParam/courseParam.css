@@ -1,0 +1,21 @@
+.courseParam{
+	width: 235px;
+	height: 235px;
+	text-align: center;
+	margin:0 10px 0 10px;
+    border-radius: 10px;
+	background-color: white;
+	color:#777777;	
+
+	display: flex;
+    align-items: center;
+    justify-content: center;  	
+}
+
+.courseParam:hover {
+	transition: 1s; 	
+
+    transform: scale(1.2);    
+    color:#39c2d7;
+    padding:0% 0% 20% 0%; 
+}

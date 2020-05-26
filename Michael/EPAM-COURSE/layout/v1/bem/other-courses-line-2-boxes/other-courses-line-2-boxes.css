@@ -1,0 +1,6 @@
+.other-courses-line-2-boxes{
+    display: flex;
+	flex-wrap: wrap;
+	
+    justify-content: center;  	
+}

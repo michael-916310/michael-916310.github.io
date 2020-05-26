@@ -1,0 +1,14 @@
+/*
+Раздел "ВСЕ ОТЗЫВЫ"
+старт 2400px финиш 2570px  высота 170px
+*/
+.all-comment{
+    display: flex;
+    height: calc(170/1200*100vw); background-color:white;
+
+    align-items: center;
+    justify-content: center;   
+    
+    border: 1px dotted blue;
+    
+}

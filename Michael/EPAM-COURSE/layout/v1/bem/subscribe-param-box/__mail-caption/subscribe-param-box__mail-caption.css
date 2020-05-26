@@ -1,0 +1,10 @@
+.subscribe-param-box__mail-caption{
+    margin: 0 0 0 25px;
+    height: 35px;
+
+    color:white;
+    font-size: 12px;
+
+    display:flex;
+    align-items:flex-end;
+}

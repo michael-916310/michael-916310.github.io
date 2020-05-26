@@ -1,0 +1,11 @@
+.subscribe-param-box__button{
+    text-align: center;
+    background-color:#046c7c;
+    width: 160px; 
+    height: 40px;
+    margin: 35px 0 40px 25px; 
+    border: 0px;
+    padding: 0%;   
+    color: white;      
+    font-size: 15px;
+}

@@ -1,0 +1,11 @@
+.course-сaption{
+	height: 135px;
+	font-size: 35px;
+	color:#777777;
+
+	display:flex;
+	justify-content: center;
+    align-items: center;	
+
+	background-color:#55688f;
+}
