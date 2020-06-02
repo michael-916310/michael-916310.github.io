@@ -1,5 +1,6 @@
 {
-  "name": "final-task",
+  "homepage": "https://michael-916310.github.io/Michael/EPAM-COURSE/react-only/build/",
+  "name": "final-task-react-only",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

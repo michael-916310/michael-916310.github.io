@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.d84c1f3b.chunk.css",
-    "main.js": "/static/js/main.4d23d390.chunk.js",
-    "main.js.map": "/static/js/main.4d23d390.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0435dfb8.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0435dfb8.js.map",
-    "static/css/2.764ccc25.chunk.css": "/static/css/2.764ccc25.chunk.css",
-    "static/js/2.93085757.chunk.js": "/static/js/2.93085757.chunk.js",
-    "static/js/2.93085757.chunk.js.map": "/static/js/2.93085757.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.81cfa1a7d73e56eacd8a937572ae6398.js": "/precache-manifest.81cfa1a7d73e56eacd8a937572ae6398.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.764ccc25.chunk.css.map": "/static/css/2.764ccc25.chunk.css.map",
-    "static/css/main.d84c1f3b.chunk.css.map": "/static/css/main.d84c1f3b.chunk.css.map",
-    "static/js/2.93085757.chunk.js.LICENSE.txt": "/static/js/2.93085757.chunk.js.LICENSE.txt"
+    "main.css": "/Michael/EPAM-COURSE/react-only/build/static/css/main.d84c1f3b.chunk.css",
+    "main.js": "/Michael/EPAM-COURSE/react-only/build/static/js/main.49b38533.chunk.js",
+    "main.js.map": "/Michael/EPAM-COURSE/react-only/build/static/js/main.49b38533.chunk.js.map",
+    "runtime-main.js": "/Michael/EPAM-COURSE/react-only/build/static/js/runtime-main.28f63539.js",
+    "runtime-main.js.map": "/Michael/EPAM-COURSE/react-only/build/static/js/runtime-main.28f63539.js.map",
+    "static/css/2.764ccc25.chunk.css": "/Michael/EPAM-COURSE/react-only/build/static/css/2.764ccc25.chunk.css",
+    "static/js/2.8d639ac4.chunk.js": "/Michael/EPAM-COURSE/react-only/build/static/js/2.8d639ac4.chunk.js",
+    "static/js/2.8d639ac4.chunk.js.map": "/Michael/EPAM-COURSE/react-only/build/static/js/2.8d639ac4.chunk.js.map",
+    "index.html": "/Michael/EPAM-COURSE/react-only/build/index.html",
+    "precache-manifest.0210cca2b5da7567d018cdda18dd556f.js": "/Michael/EPAM-COURSE/react-only/build/precache-manifest.0210cca2b5da7567d018cdda18dd556f.js",
+    "service-worker.js": "/Michael/EPAM-COURSE/react-only/build/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/Michael/EPAM-COURSE/react-only/build/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.d84c1f3b.chunk.css.map": "/Michael/EPAM-COURSE/react-only/build/static/css/main.d84c1f3b.chunk.css.map",
+    "static/js/2.8d639ac4.chunk.js.LICENSE.txt": "/Michael/EPAM-COURSE/react-only/build/static/js/2.8d639ac4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0435dfb8.js",
+    "static/js/runtime-main.28f63539.js",
     "static/css/2.764ccc25.chunk.css",
-    "static/js/2.93085757.chunk.js",
+    "static/js/2.8d639ac4.chunk.js",
     "static/css/main.d84c1f3b.chunk.css",
-    "static/js/main.4d23d390.chunk.js"
+    "static/js/main.49b38533.chunk.js"
   ]
 }
