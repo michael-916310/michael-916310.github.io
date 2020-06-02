@@ -1,0 +1,108 @@
+
+// Константы уровня приложения 
+$client-width: 1024px;
+$client-width-large: 1240px;
+$client-width-largest: 1500px;
+
+$break-point-to-large: 1280px;
+$break-point-to-largest: 1600px;
+
+$coral-color: coral;
+
+$posterHeight: 445px;
+$posterWidth: 300px;
+
+
+// Вендорные префиксы для флексов
+%vendor-display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+%vendor-justify-content-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;  
+}
+
+%vendor-justify-content-space-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+%vendor-justify-content-space-around { 
+  -ms-flex-pack: distribute;
+  justify-content: space-around
+}
+
+
+%vendor-align-items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+%vendor-flex-wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+%vendor-flex-direction {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+
+// фон для модалок
+%modal-backgound {
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+// повторяющийся код во внешних контейнерах компонент
+%Comp-Outer-Container {
+  @extend %vendor-display-flex;
+  @extend %vendor-justify-content-center;
+  box-sizing: border-box;
+
+  width: 100%;  
+}
+
+// Повторяющийся код во внутренних контейнерах
+%Comp-Inner-Container {
+  box-sizing: border-box;
+  width: $client-width;  
+
+}
+
+// Медиазапросы на установку "клиентской ширины"
+@media (min-width: $break-point-to-large) {
+  .film-list-inner-container, 
+  .footer-comp-inner-container, 
+  .search-comp-inner-container,
+  .film-detail-comp-inner-container,
+  .favorites-page-inner-container {
+    width: $client-width-large;
+  }
+}
+
+@media (min-width: $break-point-to-largest) {
+  .film-list-inner-container, 
+  .footer-comp-inner-container , 
+  .search-comp-inner-container,
+  .film-detail-comp-inner-container,
+  .favorites-page-inner-container {
+    width: $client-width-largest;
+  }
+}
+

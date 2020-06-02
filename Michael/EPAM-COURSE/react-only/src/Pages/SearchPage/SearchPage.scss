@@ -1,0 +1,44 @@
+@import '../../App.scss';
+
+// Высоты топа, тела, подвала страниц
+$search-page-header-height: 200px;
+$search-page-footer-height: 50px;
+$seatch-page-film-list-height: calc(100vh - 200px - 50px);
+
+.search-page-header {
+  height: $search-page-header-height;
+}
+
+.search-page-result {
+  min-height: $seatch-page-film-list-height;
+}
+
+.search-page-empty-result {
+  min-height: $seatch-page-film-list-height;
+
+  @extend %vendor-display-flex;
+  @extend %vendor-justify-content-center;
+  @extend %vendor-align-items-center;
+
+  font-size: 32px;
+  color:lightgray;  
+}
+
+.search-page-footer {
+  height: $search-page-footer-height;
+}
+
+/*стили для рендер-пропса*/
+
+.film-list-comp__top-line {
+  @extend %vendor-display-flex;
+  @extend %vendor-justify-content-space-between;
+  box-sizing: border-box;
+
+  width:100%;
+  padding: 0 30px;
+}
+
+.film-list-comp__sort-by-release-date, .film-list-comp__sort-by-runtime {
+  margin-left: 10px;
+}

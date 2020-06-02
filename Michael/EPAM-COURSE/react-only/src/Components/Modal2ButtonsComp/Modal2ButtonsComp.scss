@@ -1,0 +1,31 @@
+@import '../../App.scss';
+
+.modal-2-buttons__background{
+  @extend %modal-backgound;
+}
+
+.modal-2-buttons__outer-container {
+  @extend %vendor-display-flex;
+  @extend %vendor-justify-content-space-between;
+  @extend %vendor-flex-direction;
+  
+  width: 300px;
+  min-height: 150px;
+  padding: 10px;
+
+  border: 1px solid black;
+  background-color: white;
+}
+
+.modal-2-buttons__button-container {
+  @extend %vendor-display-flex;
+  @extend %vendor-justify-content-space-between;
+}
+
+.modal-2-buttons__action-button {
+  width:100px;
+  height: 30px;
+
+  border:none;
+  background-color: $coral-color;
+}

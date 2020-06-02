@@ -1,0 +1,104 @@
+/*
+1.Сначала положение элемента относительно других: position, left/right/top/bottom, float, clear, z-index.
+2.Затем размеры и отступы: width, height, margin, padding…
+3.Рамка border, она частично относится к размерам.
+4.Общее оформление содержимого: list-style-type, overflow…
+5.Цветовое и стилевое оформление: background, color, font…
+*/
+
+@import '../../App.scss';
+
+.search-comp-outer-container {
+  @extend %Comp-Outer-Container;
+
+  height: 100%;
+
+  background-image: url(/img/filmstrip.jpg);
+}
+
+.search-comp-inner-container {
+  @extend %Comp-Inner-Container;
+
+  padding: 10px 30px;
+
+  color: white;
+}
+
+.search-comp__caption1 {
+  @extend %vendor-display-flex;
+  @extend %vendor-justify-content-space-between;
+  margin-bottom: 10px;
+
+  color: $coral-color;
+  font-weight: bold;
+
+}
+
+.search-comp__caption2 {
+  margin:40px 0 20px;
+
+  font-size: bold;
+}
+
+.search-comp__search-string {
+  box-sizing: border-box;
+  width:100%;
+}
+
+.search-comp__buttom-line {
+  @extend %vendor-display-flex;
+  @extend %vendor-justify-content-space-between;
+
+  margin:10px 0px;
+  padding:10px 0;
+  
+  width: 100%;
+}
+
+.search-comp__search-by-title, .search-comp__search-by-director {
+  margin-left:5px;
+  border: none;
+}
+
+.search-comp__search-by_selected {
+  background-color: $coral-color;;
+}
+
+.search-comp__button {
+  background-color: $coral-color;
+  width: 150px;
+  height: 30px;
+  border:none;
+}
+
+// Стили для модального окна
+.search-comp__modal-nothing-to-search-background {
+  @extend %modal-backgound;
+}
+
+.search-comp__modal-nothing-to-search-outer-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+
+  width: 300px;
+  height: 150px;;
+
+  border: 1px black solid;
+  padding:10px;
+
+  background-color: white;
+}
+
+.search-comp__modal-nothing-to-search-button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.search-comp__modal-nothing-to-search-button {
+  background-color: $coral-color;
+  border: none;
+  width:100px;
+  height: 30px;
+}

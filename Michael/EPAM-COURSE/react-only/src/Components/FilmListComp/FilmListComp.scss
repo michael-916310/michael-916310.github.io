@@ -1,0 +1,35 @@
+/*
+1.Сначала положение элемента относительно других: position, left/right/top/bottom, float, clear, z-index.
+2.Затем размеры и отступы: width, height, margin, padding…
+3.Рамка border, она частично относится к размерам.
+4.Общее оформление содержимого: list-style-type, overflow…
+5.Цветовое и стилевое оформление: background, color, font…
+*/
+
+@import '../../App.scss';
+
+.film-list-outer-container {
+  @extend %Comp-Outer-Container;  
+  height: 100%;
+}
+
+.film-list-inner-container {
+  @extend %Comp-Inner-Container;
+  height: 100%;
+}
+
+.film-list-comp__list {
+  @extend %vendor-display-flex;
+  @extend %vendor-flex-wrap;
+  @extend %vendor-justify-content-space-between;
+}
+
+@media (max-width: 650px) {
+  .film-list-comp__list {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;  
+  }
+}
+
+

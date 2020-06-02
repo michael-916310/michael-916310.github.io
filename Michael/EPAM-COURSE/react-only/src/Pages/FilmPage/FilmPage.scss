@@ -1,0 +1,36 @@
+/*
+1.Сначала положение элемента относительно других: position, left/right/top/bottom, float, clear, z-index.
+2.Затем размеры и отступы: width, height, margin, padding…
+3.Рамка border, она частично относится к размерам.
+4.Общее оформление содержимого: list-style-type, overflow…
+5.Цветовое и стилевое оформление: background, color, font…
+*/
+
+$film-page-header-height: 415px;
+$film-page-footer-height: 50px;
+$film-page-film-list-height: calc(100vh - 415px - 50px);
+
+.film-page-header {
+  max-height: $film-page-header-height;
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+.film-page-content {
+  min-height: $film-page-film-list-height;
+  box-sizing: border-box;
+}
+
+.film-page-footer {
+  height: $film-page-footer-height;
+  box-sizing: border-box;
+}
+
+@media (max-width:950px) {
+  .film-page-header {
+    max-height: $film-page-header-height * 2;
+  }  
+}
+
+

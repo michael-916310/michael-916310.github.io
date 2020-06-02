@@ -1,0 +1,52 @@
+/*
+1.Сначала положение элемента относительно других: position, left/right/top/bottom, float, clear, z-index.
+2.Затем размеры и отступы: width, height, margin, padding…
+3.Рамка border, она частично относится к размерам.
+4.Общее оформление содержимого: list-style-type, overflow…
+5.Цветовое и стилевое оформление: background, color, font…
+*/
+
+@import '../../App.scss';
+
+.film-card-comp-container {
+  box-sizing: border-box;
+  margin: 10px 5px;
+  color: grey;
+
+  border: 1px grey dotted;
+}
+
+.film-card-comp__poster {
+  display:block;
+  box-sizing: border-box;
+
+  width: $posterWidth;
+  height: $posterHeight;  
+}
+
+.film-card-comp__line1, .film-card-comp__line2 {
+  @extend %vendor-display-flex;
+  @extend %vendor-justify-content-space-between;
+  @extend %vendor-align-items-center;
+  box-sizing: border-box;
+
+  margin: 5px 0px;
+  padding:0 5px;
+}
+
+.film-card-comp__star {
+  width: 40px;
+  height: 40px;
+}
+
+.film-card-comp__title {
+  font-weight: bold;
+}
+
+.film-card-comp__year{
+  border: 1px solid grey;
+  padding:2px 3px;
+  border-radius: 3px;
+}
+
+

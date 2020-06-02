@@ -1,0 +1,5 @@
+@import './../../App.scss';
+
+.spinner-comp-background {
+    @extend %modal-backgound;
+}
