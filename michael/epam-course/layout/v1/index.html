@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>layout task</title>
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<!-- Блок Введение -->
+	<link rel="stylesheet" href="bem/intro-module/intro-module.css">
+	<link rel="stylesheet" href="bem/intro-1line/intro-1line.css">
+	<link rel="stylesheet" href="bem/intro-1line/__logo/intro-1line__logo.css">
+	<link rel="stylesheet" href="bem/intro-1line/__menu/intro-1line__menu.css">
+	<link rel="stylesheet" href="bem/intro-1line/__button/intro-1line__button.css">
+	<link rel="stylesheet" href="bem/intro-1line/__menu-item/intro-1line__menu-item.css">
+
+	<link rel="stylesheet" href="bem/intro-center/intro-center.css">
+	<link rel="stylesheet" href="bem/intro-center/__to-left/intro-center__to-left.css">
+	<link rel="stylesheet" href="bem/intro-center/__center/intro-center__center.css">
+	<link rel="stylesheet" href="bem/intro-center/__img/intro-center__img.css">	
+	<link rel="stylesheet" href="bem/intro-center/__box/intro-center__box.css">	
+	<link rel="stylesheet" href="bem/intro-center/__line1/intro-center__line1.css">	
+	<link rel="stylesheet" href="bem/intro-center/__line2/intro-center__line2.css">	
+	<link rel="stylesheet" href="bem/intro-center/__line3/intro-center__line3.css">	
+	<link rel="stylesheet" href="bem/intro-center/__button/intro-center__button.css">	
+	<link rel="stylesheet" href="bem/intro-center/__to-right/intro-center__to-right.css">
+
+	<link rel="stylesheet" href="bem/intro-scroll/intro-scroll.css">
+	<link rel="stylesheet" href="bem/intro-scroll/__box/intro-scroll__box.css">
+	<link rel="stylesheet" href="bem/intro-scroll/__dot/intro-scroll__dot.css">
+	<!-- Блок Введение ОКОНЧАНИЕ-->
+
+	<!-- Блок ИНФОРМАЦИИ О КУРСЕ-->
+	<link rel="stylesheet" href="bem/course-сaption/course-сaption.css">
+	<link rel="stylesheet" href="bem/courseInfo4boxes/courseInfo4boxes.css">
+	<link rel="stylesheet" href="bem/courseInfo2boxes/courseInfo2boxes.css">
+	<link rel="stylesheet" href="bem/courseParam/courseParam.css">
+	<link rel="stylesheet" href="bem/courseParam/__1line/courseParam__1line.css">
+	<link rel="stylesheet" href="bem/courseParam/__2line/courseParam__2line.css">
+	<!-- Блок ИНФОРМАЦИИ О КУРСЕ ОКОНЧАНИЕ-->
+
+	<!-- Блок ДРУГИЕ КУРСЫ -->
+	<link rel="stylesheet" href="bem/other-courses-module/other-courses-module.css">
+
+	<link rel="stylesheet" href="bem/other-courses-header/other-courses-header.css">
+	<link rel="stylesheet" href="bem/other-courses-header/__text/other-courses-header__text.css">
+
+	<link rel="stylesheet" href="bem/other-courses-line-2-boxes/other-courses-line-2-boxes.css">
+	<link rel="stylesheet" href="bem/other-courses-line-4-boxes/other-courses-line-4-boxes.css">
+
+	<link rel="stylesheet" href="bem/other-course/other-course.css">
+	<link rel="stylesheet" href="bem/other-course/__img/other-course__img.css">
+	<link rel="stylesheet" href="bem/other-course/__box/other-course__box.css">
+	<link rel="stylesheet" href="bem/other-course/__name/other-course__name.css">
+	<link rel="stylesheet" href="bem/other-course/__duration/other-course__duration.css">
+	<link rel="stylesheet" href="bem/other-courses-footer/other-courses-footer.css">
+	<!-- Блок ДРУГИЕ КУРСЫ ОКОНЧАНИЕ -->	
+
+	<!-- Блок ПОДПИСКА НА РАССЫЛКУ -->
+	<link rel="stylesheet" href="bem/subscribe-module/subscribe-module.css">
+	<link rel="stylesheet" href="bem/subscribe-box/subscribe-box.css">
+	<link rel="stylesheet" href="bem/subscribe-box/__caption/subscribe-box__caption.css">
+	<link rel="stylesheet" href="bem/subscribe-box/__text/subscribe-box__text.css">	
+	<link rel="stylesheet" href="bem/subscribe-param-box/subscribe-param-box.css">
+	<link rel="stylesheet" href="bem/subscribe-param-box/__name/subscribe-param-box__name.css">
+	<link rel="stylesheet" href="bem/subscribe-param-box/__mail-caption/subscribe-param-box__mail-caption.css">
+	<link rel="stylesheet" href="bem/subscribe-param-box/__mail/subscribe-param-box__mail.css">
+	<link rel="stylesheet" href="bem/subscribe-param-box/__button/subscribe-param-box__button.css">
+	<!-- Блок ПОДПИСКА НА РАССЫЛКУ ОКОНЧАНИЕ-->	
+
+	<!-- Блок ОТЗЫВЫ -->
+	<link rel="stylesheet" href="bem/comment-header/comment-header.css">
+	<link rel="stylesheet" href="bem/comment-header/__text/comment-header__text.css">
+
+	<link rel="stylesheet" href="bem/comment-line/comment-line.css">
+
+	<link rel="stylesheet" href="bem/comment/comment.css">
+	<link rel="stylesheet" href="bem/comment/__img/comment__img.css">
+	<link rel="stylesheet" href="bem/comment/__text/comment__text.css">
+	<link rel="stylesheet" href="bem/comment/__caption/comment__caption.css">
+	<link rel="stylesheet" href="bem/comment/_right/comment_right.css">
+	<link rel="stylesheet" href="bem/comment/_left/comment_left.css">
+	<!-- Блок ОТЗЫВЫ ЗАКОНЧЕН -->
+
+	<!-- Блок ВСЕ ОТЗЫВЫ  -->
+	<link rel="stylesheet" href="bem/all-comment/all-comment.css">
+	<link rel="stylesheet" href="bem/all-comment/__text/all-comment__text.css">
+	<!-- Блок ВСЕ ОТЗЫВЫ ЗАКОНЧЕН -->
+
+	<!-- Блок ПОДВАЛ-->
+	<link rel="stylesheet" href="bem/footer/footer.css">
+	<link rel="stylesheet" href="bem/footer/__disclaimer/footer__disclaimer.css">
+	<link rel="stylesheet" href="bem/footer/__logo/footer__logo.css">
+	<link rel="stylesheet" href="bem/footer/__disclaimer-text/footer__disclaimer-text.css">
+	<link rel="stylesheet" href="bem/footer/__courses/footer__courses.css">
+	<link rel="stylesheet" href="bem/footer/__courses-caption/footer__courses-caption.css">
+	<link rel="stylesheet" href="bem/footer/__courses-container/footer__courses-container.css">
+	<link rel="stylesheet" href="bem/footer/__courses-list/footer__courses-list.css">
+	<link rel="stylesheet" href="bem/footer/__courses-item/footer__courses-item.css">
+	<!-- Блок ПОДВАЛ ЗАКОНЧЕН-->	
+
+	<!-- Общие стили -->
+	<link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+	<main>
+		<div class="intro-module">
+			<section class="intro-1line">
+				<div class="intro-1line__logo">
+					<img src="img/logo.png">
+				</div>
+				<div class="intro-1line__menu">
+					<a class="intro-1line__menu-item" href="#" >Программа</a> 
+					<a class="intro-1line__menu-item" href="#" >Расписание</a> 
+					<a class="intro-1line__menu-item" href="#" >Преподователи</a> 
+				</div>
+				<div class="intro-1line__button">
+					<button>Войти</button>
+				</div>
+			</section>
+			<section class="intro-center">
+				<div class="intro-center__to-left">
+					<div>
+						<img src="img/icon-arrow-left.png">
+					</div>
+				</div>
+				<div class="intro-center__center">
+					<div class="intro-center__img">
+						<div>
+							<img src="img/2019-09-05_1318.png">
+						</div>
+					</div>
+					<div class="intro-center__box">
+						<div class="intro-center__line1"> 
+							Введение в HTML и CSS
+						</div>
+						<div class="intro-center__line2"> 
+							Интенсивный онлайн-курс для начинающих
+						</div>
+						<div class="intro-center__line3"> 
+								Курс рассчитан на людей, у кого пока нет опыта работы с HTML и CSS. <br>
+								Занятия проходят 3 раза в неделю, в 18:30. За время занятий вы освоите<br>
+								все современные подходы работы с HTML и CSS и научитесь верстать<br>
+								макеты любой сложности.
+						</div>
+						<div class="intro-center__button"> 
+							<input type="button" value="ЗАПИСАТЬСЯ"> 
+						</div>
+					</div>
+				</div>
+				<div class="intro-center__to-right">
+					<div>
+						<img src="img/icon-arrow-right.png">
+					</div>
+				</div>
+			</section>
+			<section class="intro-scroll">
+				<div class="intro-scroll__box">
+						<a class="intro-scroll__dot" href="#">&#8226;</a>
+						<a class="intro-scroll__dot" href="#">&#9679;</a>
+						<a class="intro-scroll__dot" href="#">&#8226;</a>	
+						<a class="intro-scroll__dot" href="#">&#8226;</a>	
+						<a class="intro-scroll__dot" href="#">&#8226;</a>	
+				</div>
+			</section>
+			<section class="course-сaption">
+				<div class="course-сaption__text">
+					О курсе
+				</div>
+			</section>
+		</div>
+
+		<!--
+			=================================================
+			ВТОРОЙ БЛОК - ИНФОРМАЦИЯ О КУРСЕ
+			=================================================
+		-->
+		<article class="courseInfo4boxes">
+			<section class="courseInfo2boxes">
+				<div class="courseParam">
+					<div>
+						<span class="courseParam__1line"><b>102</b></span> 
+						<br>
+						<span class="courseParam__2line">часа</span>
+					</div>
+				</div>
+				<div class="courseParam">
+					<div>
+						<span class="courseParam__1line"><b>34</b></span> 
+						<br>
+						<span class="courseParam__2line">занятия</span>
+					</div>
+				</div>	
+			</section>
+			<section class="courseInfo2boxes">
+				<div class="courseParam">
+					<div>
+						<span class="courseParam__1line"><b>18</b></span> 
+						<br>
+						<span class="courseParam__2line">тем</span>
+					</div>
+				</div>	
+				<div class="courseParam">
+					<div>
+						<span class="courseParam__1line"><b>12</b></span> 
+						<br>
+						<span class="courseParam__2line">преподавателей</span>
+					</div>
+				</div>									
+			</section>
+		</article>
+
+		<!--  
+			=================================================
+			БЛОК ДРУГИТЕ КУРСЫ 
+			=================================================
+		-->
+		<article class="other-courses-module">
+			<div class="other-courses-header">
+				<div class="other-courses-header__text" >Другие курсы</div>
+			</div>
+
+			<div class="other-courses-line-4-boxes">
+
+				<div class="other-courses-line-2-boxes">
+
+					<div class="other-course">
+						<div class="other-course__img">
+							<img src="img/iconfinder_multimedia-09_2516850.png">
+						</div>
+						<div class="other-course__box">
+							<div class="other-course__name">
+								Мобильная разработка
+							</div>
+							<div class="other-course__duration">
+								3 месяца
+							</div>
+						</div>
+					</div>
+
+					<div class="other-course">
+						<div class="other-course__img">
+							<img src="img/iconfinder_multimedia-06_2516855.png">
+						</div>
+						<div class="other-course__box">
+							<div class="other-course__name">
+								Разработка игр
+							</div>
+							<div class="other-course__duration">
+								4 месяца
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="other-courses-line-2-boxes">
+					<div class="other-course">
+						<div class="other-course__img">
+							<img src="img/iconfinder_multimedia-04_2516853.png">
+						</div>
+						<div class="other-course__box">
+							<div class="other-course__name">
+								Машинное обучение
+							</div>
+							<div class="other-course__duration">
+								6 месяцев
+							</div>
+						</div>
+					</div>				
+	
+					<div class="other-course">
+						<div class="other-course__img">
+							<img src="img/iconfinder_multimedia-03_2516856.png">
+						</div>
+						<div class="other-course__box">
+							<div class="other-course__name">
+								Обработка фото
+							</div>
+							<div class="other-course__duration">
+								2 месяца
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="other-courses-line-4-boxes">
+				<div class="other-courses-line-2-boxes">
+
+					<div class="other-course">
+						<div class="other-course__img">
+							<img src="img/iconfinder_29-web_essential_3401847.png">
+						</div>
+						<div class="other-course__box">
+							<div class="other-course__name">
+								E-commerce
+							</div>
+							<div class="other-course__duration">
+								3 месяца
+							</div>
+						</div>
+					</div>
+
+					<div class="other-course">
+						<div class="other-course__img">
+							<img src="img/iconfinder_43-web_essential_3401861.png">
+						</div>
+						<div class="other-course__box">
+							<div class="other-course__name">
+								Продвижение в интернете
+							</div>
+							<div class="other-course__duration">
+								4 месяца
+							</div>
+						</div>
+					</div>		
+
+				</div>
+				<div class="other-courses-line-2-boxes">
+				
+					<div class="other-course">
+						<div class="other-course__img">
+							<img src="img/iconfinder_48-web_essential_3401866.png">
+						</div>
+						<div class="other-course__box">
+							<div class="other-course__name">
+								Анализ данных
+							</div>
+							<div class="other-course__duration">
+								6 месяцев
+							</div>
+						</div>
+					</div>
+
+					<div class="other-course">
+						<div class="other-course__img">
+							<img src="img/iconfinder_multimedia-04_2516853.png">
+						</div>
+						<div class="other-course__box">
+							<div class="other-course__name">
+								Разработка на java
+							</div>
+							<div class="other-course__duration">
+								6 месяцев
+							</div>
+						</div>
+					</div>
+	
+				</div>
+	
+			</div>
+			<div class="other-courses-footer"></div>
+		</article>
+
+		<!--
+		Раздел "ПОДПИСКА НА РАССЫЛКУ" старт 1545px финиш 1835px высота 290px
+		-->
+		<article class="subscribe-module">
+			<div class="subscribe-box">
+				<div class="subscribe-box__caption">
+					Подписка на рассылку
+				</div>
+				<div class="subscribe-box__text">
+					Подпишитесь на нашу рассылку и получайте
+					информацию о наших новых курсах. Подпишитесь на 
+					нашу рассылку и получайте информацию о наших 
+					новых курсах.					
+				</div>
+			</div>
+			<div class="subscribe-param-box">
+				<input class="subscribe-param-box__name" type="text" placeholder="Ваше имя"> <br>
+				<div class="subscribe-param-box__mail-caption">Ваш e-mail</div> 
+				<input class="subscribe-param-box__mail" type="text" placeholder="Ваш e-mail" value="ivan_sidorov@epam.com">
+				<br>
+				<button class="subscribe-param-box__button">Подписаться</button>
+
+			</div>
+		</article>
+
+
+		
+		<!--
+		Раздел "ОТЗЫВЫ" старт 1835px финиш 2400px  высота 565px
+		-->
+		<article style="background-color:#55688f ">
+			<div class="comment-header">
+				<div class="comment-header__text" >Отзывы</div>
+			</div>
+
+			<!-- первая строка -->
+			<div class="comment-line" >
+				<div class="comment comment_left" >
+					<!-- первый отзыв -->
+					<div class="comment__img">
+						<img src="img/avatar-2.jpg"> 
+					</div>
+					<div class="comment__text">
+						<p class="comment__caption" >Aaron Littie</p>
+						<p>
+							I never knew anything about computer profogramming
+							until I took the intro to Computer Programming 
+							course. Since I did not know anything about
+							programming need a course where it would start 
+							from the ground and work my way up, that is just
+							where this course started
+						</p>
+					</div>
+				</div>
+				<!-- второй отзыв -->
+				<div class="comment comment_right" >
+					<!-- первый отзыв -->
+					<div class="comment__img">
+						<img src="img/avatar-3.jpg"> 
+					</div>
+					<div class="comment__text">
+						<p class="comment__caption">Samantha Bradley</p>
+						<p>
+							I really like programm and it`s so much fun and 
+							pretty amazing to learn!
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- вторая строка -->
+			<div class="comment-line" >
+				<div class="comment comment_left" >
+					<!-- первый отзыв -->
+					<div class="comment__img">
+						<img src="img/avatar-1.jpg"> 
+					</div>
+					<div class="comment__text">
+						<p class="comment__caption" >Hannah Lawrence</p>
+						<p>
+							Learned a lot about many aspects of coding. The  
+							exposure to so many coding languages and concepts
+							was invaluble I especially loved the courses taught
+							by Steve Huffman
+						</p>
+					</div>
+				</div>
+				<!-- второй отзыв -->
+				<div class="comment comment_right" >
+					<!-- первый отзыв -->
+					<div class="comment__img">
+						<img src="img/avatar-4.jpg"> 
+					</div>
+					<div class="comment__text">
+						<p class="comment__caption">Michael Matthews</p>
+						<p>
+							Before starting introduction to Programming
+							Nanodegree, I had only the basic knowledge of
+							computers, surfing the web and gaming. I never
+							really apprectiated technology until I took this course.
+							After completing this Nanodegree, I found I had a
+							new passion for programming, and a strong 
+							foundation of knowledge that could be build upon
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</article>
+
+		<!-- 		Раздел "ВСЕ ОТЗЫВЫ" 		-->
+		<article class="all-comment">
+			<div class="all-comment__text" >ВСЕ ОТЗЫВЫ</div>		
+		</article>
+
+		<!-- Подвал -->
+		<article class="footer">
+			<!-- левая часть футтера -->
+			<section class="footer__disclaimer">
+				<div class="footer__logo">
+					<img src="img/logo_color_gray.png" style="width: 100%;">
+				</div>
+				<div class="footer__disclaimer-text">
+					<p>
+						© 2018. Все права защищены  						
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco
+						 laboris nisi ut aliquip ex ea commodo consequat. 
+						 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+						  dolore eu fugiat nulla pariatur. 
+						  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+						  officia deserunt mollit anim id est laborum. 						
+					</p>
+				</div>
+			</section>
+			<section class="footer__courses">
+					<div class="footer__courses-caption">Курсы</div>
+					<div class="footer__courses-container">
+						<div class="footer__courses-list">
+							<div class="footer__courses-item"> Мобильная разработка </div>
+							<div class="footer__courses-item"> Фронтенд-разработка. Продвинутый курс </div>
+							<div class="footer__courses-item"> Основы машинного обучения</div>
+							<div class="footer__courses-item"> Базовый курс по SEO</div>
+							<div class="footer__courses-item"> Продвинутый курс по SEO</div>
+						</div>
+						<div class="footer__courses-list">
+							<div class="footer__courses-item"> Разработка вебсайтов</div>
+							<div class="footer__courses-item"> Разработка на java </div>
+							<div class="footer__courses-item"> Разработка на PHP</div>
+							<div class="footer__courses-item"> .NET Разработка</div>
+							<div class="footer__courses-item"> Базовый курс по UX </div>
+						</div>
+
+					</div>
+			</section>
+	
+		</article>
+
+	</main>
+
+
+
+</body>
+</html>

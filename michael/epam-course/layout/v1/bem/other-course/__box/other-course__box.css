@@ -1,0 +1,8 @@
+.other-course__box{
+	width:100px;
+	
+    display: flex;
+	flex-direction:column;
+	justify-content: center;
+	
+}

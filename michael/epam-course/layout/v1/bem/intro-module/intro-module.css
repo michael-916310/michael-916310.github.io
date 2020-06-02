@@ -1,0 +1,8 @@
+.intro-module{
+    background-color: #55688f;
+    border: 1px dotted black;
+
+    background-image: url(../../img/hero-background.jpg); 
+    background-repeat: repeat-x;
+
+}

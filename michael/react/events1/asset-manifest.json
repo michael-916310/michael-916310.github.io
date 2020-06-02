@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Michael/react/events1/static/css/main.d1b05096.chunk.css",
+    "main.js": "/Michael/react/events1/static/js/main.d57d81d7.chunk.js",
+    "main.js.map": "/Michael/react/events1/static/js/main.d57d81d7.chunk.js.map",
+    "runtime-main.js": "/Michael/react/events1/static/js/runtime-main.c9cc26ea.js",
+    "runtime-main.js.map": "/Michael/react/events1/static/js/runtime-main.c9cc26ea.js.map",
+    "static/js/2.c07b32ce.chunk.js": "/Michael/react/events1/static/js/2.c07b32ce.chunk.js",
+    "static/js/2.c07b32ce.chunk.js.map": "/Michael/react/events1/static/js/2.c07b32ce.chunk.js.map",
+    "index.html": "/Michael/react/events1/index.html",
+    "precache-manifest.8cb28f67dd6af0f74abc452601caa283.js": "/Michael/react/events1/precache-manifest.8cb28f67dd6af0f74abc452601caa283.js",
+    "service-worker.js": "/Michael/react/events1/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/Michael/react/events1/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.c07b32ce.chunk.js.LICENSE.txt": "/Michael/react/events1/static/js/2.c07b32ce.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/Michael/react/events1/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c9cc26ea.js",
+    "static/js/2.c07b32ce.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.d57d81d7.chunk.js"
+  ]
+}

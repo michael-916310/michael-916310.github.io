@@ -1,0 +1,7 @@
+.subscribe-module{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	background-color:#39c2d7;
+}
